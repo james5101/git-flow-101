@@ -1,3 +1,1 @@
-# git-flow\\
-
-adding my new feature
+# Git Flow Command Line Tool 101
