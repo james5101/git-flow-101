@@ -53,3 +53,16 @@ git push origin feature/MYNEWFEATURE
 ```
 #### What it looks like
 ![img](img/git_flow_feature_publish.png)
+
+## Get latest feature branch
+* In order to pull down changes from the remote we will need to run:
+```
+git flow feature pull origin MYNEWFEATURE
+```
+Git equivalent commands
+```
+git checkout feature/MYFEATURE
+git pull --rebase origin feature/MYNEWFEATURE
+```
+
+#### What it looks like
