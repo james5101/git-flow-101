@@ -41,3 +41,5 @@ git checkout -b feature/MYFNEWEATURE develop
 #### What it looks like
 ![img](img/git_flow_feature_start.png)
 
+### Push a feature branch
+* In order to share our feature branch we need to push it to the remote. This next command helps us push our changes (*Side note you still have to commit changes before pushing*)
