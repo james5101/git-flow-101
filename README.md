@@ -84,4 +84,45 @@ git branch -d feature/MYNEWFEATURE
 ### What it looks like
 ![img](img/git_flow_feature_finish.png)
 
-### **Releases** 
+### **Releases**
+### Create release
+* We have all our changes in our develop branch, our next step is to cut our release branch. The command needed to do this is:
+```
+git flow release start 1.4.0
+```
+Git equivalent commands
+```
+git checkout -b release/1.4.0 develop
+```
+### What it looks like
+![img](img/git_flow_release_start.png)
+
+### Push release
+* Next we want to push our release branch up to the remote. The command needed to do this is:
+```
+git flow release publish 1.4.0
+```
+Git equivalent commands
+```
+git checkout release/1.4.0
+git push origin release/1.4.0
+```
+### What it looks like
+![img](img/git_flow_release_start.png)
+
+### Finalize release
+* Next we want to finalize our release branch. The command needed to do this is:
+```
+git flow release finish 1.4.0
+```
+Git equivalent commands
+```
+git checkout master
+git merge --no-ff release/1.4.0
+git tag -a 1.4.0
+git checkout develop
+git merge --no-ff release/1.4.0
+git branch -d release/1.4.0
+```
+### What it looks like
+![img](img/git_flow_release_start.png)
