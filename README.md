@@ -1,5 +1,6 @@
 # Git Flow Command Line Tool 101
 
+
 ## Overview
 The Git Flow Command Line tool helps you manage your Git Flow process with stream lined commands. The commands are a wrapper around the traditonal git commands. In this document we will go over some of the commands that run behind the scenes when you are using the git flow command line tools.
 
@@ -126,3 +127,5 @@ git branch -d release/1.4.0
 ```
 ### What it looks like
 ![img](img/git_flow_release_start.png)
+
+
