@@ -66,3 +66,18 @@ git pull --rebase origin feature/MYNEWFEATURE
 ```
 
 #### What it looks like
+(*Looks like this will be depricated soon*)
+![img](img/git_flow_feature_pull.png)
+
+### Finish feature
+* Ok, so you coded your feature, wrote your tests and  we are at the last step. Lets finsih this feature up:
+```
+git flow feature finish MYNEWFEATURE
+```
+Git equivalent commands
+```
+git checkout develop
+git merge --no-ff feature/MYNEWFEATURE
+git branch -d feature/MYNEWFEATURE
+```
+### What it looks like
