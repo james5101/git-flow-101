@@ -15,6 +15,7 @@ Gitflow is ideally suited for projects that have a scheduled release cycle. It a
 Full overview [HERE](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 
 ## Common git flow commands mapped to git commands
+### **Features**
 ### Initilaze
 * When initizaling a project with the git flow commands the first command we need to run is :
 ```
@@ -81,3 +82,6 @@ git merge --no-ff feature/MYNEWFEATURE
 git branch -d feature/MYNEWFEATURE
 ```
 ### What it looks like
+![img](img/git_flow_feature_finish.png)
+
+### **Releases** 
