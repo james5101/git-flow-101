@@ -117,7 +117,7 @@ git push origin release/1.4.0
 ![img](img/git_flow_release_start.png)
 
 ### Finalize release
-*_Note_* - _This next command merges your feature branch and master. If master is a protected branch you will not be able to push to directly to master. We may have to skip this command and just create a pull request from your feature branch to master and clean up your local feature branch manually_
+*_Note_* - _This next command merges your release branch and master. If master is a protected branch you will not be able to push to directly to master. We may have to skip this command and just create a pull request from your release branch to master and clean up your local release branch manually_
 * Next we want to finalize our release branch. The command needed to do this is:
 ```
 git flow release finish 1.4.0
