@@ -76,7 +76,8 @@ git pull --rebase origin feature/MYNEWFEATURE
 ![img](img/git_flow_feature_pull.png)
 
 ### Finish feature
-* Ok, so you coded your feature, wrote your tests and  we are at the last step. Lets finsih this feature up:
+*_Note_* - _This next command merges your feature branch and develop. If develop is a protected branch you will not be able to push to directly to develop. We may have to skip this command and just create a pull request from your feature branch to develop and clean up your local feature branch manually_
+* Ok, so you coded your feature, wrote your tests and  we are at the last step. Lets finish this feature up:
 ```
 git flow feature finish MYNEWFEATURE
 ```
@@ -116,6 +117,7 @@ git push origin release/1.4.0
 ![img](img/git_flow_release_start.png)
 
 ### Finalize release
+*_Note_* - _This next command merges your feature branch and master. If master is a protected branch you will not be able to push to directly to master. We may have to skip this command and just create a pull request from your feature branch to master and clean up your local feature branch manually_
 * Next we want to finalize our release branch. The command needed to do this is:
 ```
 git flow release finish 1.4.0
